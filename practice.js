@@ -1,5 +1,6 @@
 /* 
-  Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
+  Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s)
+  are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
 
@@ -10,38 +11,67 @@
 
 /*
   Create an object called me. 
-  Give it a key of name with the value being your name, and another key of age with the value being your age. 
+  Give it a key of name with the value being your name, and another 
+  key of age with the value being your age. 
   Then alert your name using dot notation.
 */
 
 //Code here
+
+var me = {
+  name:"Zach Hirschman",
+  age: 20
+};
+
+alert(me.age);
 
 
 
 ////////// PROBLEM 2 //////////
 
 /*
-  Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. 
+  Make a 'favoriteThings' object that contains the following keys:
+   band, food, person, book, movie, holiday. 
   Have the values to those keys be your favorite thing in that category.
 */
 
 //Code here
 
+var favoriteThings = {
+  band:"Owl City",
+  food:"Chicken Wings",
+  person:"Bekah",
+  book:"Percy Jackson",
+  movie:"500 Days of Summer",
+  holiday:"Christmas"
+};
+
+
 
 
 /*
-  After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+  After you've made your object, add another key named 
+  'car' with the value being your favorite car and then another 
+  key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
 
+favoriteThings.car = "Camaro";
+favoriteThings.brand  = "Nabisco";
 
 
 /*
-  Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+  Now change the value of the food key in your 
+  favoriteThings object to be 'Chicken Nuggets' 
+  and change the value of the book key in your favoriteThings
+  object to be 'Harry Potter'.
 */
 
 //Code here
+
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 
@@ -49,14 +79,26 @@
 
 /* 
   Create an empty Object called backPack. 
-  Now, create a variable called 'item' and set it equal to the string 'firstPocket'. 
-  Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
+  Now, create a variable called 'item' and set it equal to the string
+   'firstPocket'. 
+  Using bracket notation, add a 'firstPocket' key (or property)
+   to backPack, using 'item'.
   Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
+  Using dot notation, add another key (or property)
+   to your backPack object that is named color, with the value
+    being the color of your backpack. 
 */
 
 //Code here
 
+var backPack = {
+
+}
+
+var item = "firstPocket"
+
+backPack[item] = "chapstick";
+backPack.color = "grey";
 
 
 /*
@@ -65,15 +107,20 @@
 
 //Code here
 
+alert(backPack);
+
 
 
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console. 
+Instead, console.log your whole backPack object and then check
+ out the console. 
 */
 
 //Code here
+
+console.log(backPack);
 
 
 
@@ -91,13 +138,16 @@ var user2 = {
 // Do not edit the code above.
 
 /* 
-  Let's say I, the user, decided to change my name and email address to the following:
-  name -> 'Tyler S. McGinnis' and email -> 'tyler.mcginnis@devmounta.in'. 
+  Let's say I, the user, decided to change my name and email address
+   to the following:
+  name -> 'Tyler S. McGinnis' and email ->
+   'tyler.mcginnis@devmounta.in'. 
   Make that change without modifying the original object code above.
 */
 
 //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -121,14 +171,28 @@ var user2 = {
 
 //Code Here
 
+var methodCollection = {
+
+}
+
 
 
 /*
-  Now add two methods (functions that are properties on objects) to your methodCollection object. 
-  One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
+  Now add two methods (functions that are properties on objects)
+   to your methodCollection object. 
+  One called 'alertHello' which alerts 'hello' 
+  and another method called 'logHello' which logs 'hello' to the
+   console. 
 */
 
 //Code Here
+
+methodCollection.alertHello = 
+  
+
+
+methodCollection.logHello = logHello(console.log('hello'));
+
 
 
 
@@ -137,6 +201,10 @@ var user2 = {
 */
 
 //Code Here
+
+methodCollection.alertHello();
+
+methodCollection.logHello();
 
 
 
